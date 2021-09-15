@@ -54,9 +54,9 @@ public void draw() {
   //If gamemode == 1, play aimTrainer
   if (gameMode == 1) {
     shapesGame1();
-    timerGame1();
     numcheck();
     mousePressedCheckGame1();
+    timerGame1();
   }
 
   //If gamemode == 2, play aimTrainerTracer
@@ -173,6 +173,7 @@ void timeCheck() {
 //END GAME 1
 
 /*----------------------------------------------------------------------*/
+
 
 //GAME 2 (aimTrainerTracer)
 
