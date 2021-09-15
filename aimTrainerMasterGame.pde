@@ -1,7 +1,7 @@
 //By ToxicSamurai
 //A combination of my other two aim training games into one game
 
-//You may use, but not edit/infringe upon my code
+//Licensed under Creative Commons CC-BY-NC-SA
 
 //Game1 variables
 //Booleans for time andscore except I didn't fucking comment
