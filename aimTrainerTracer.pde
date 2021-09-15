@@ -1,5 +1,5 @@
 //ToxicSamurai
-//You may use, but not edit/infringe upon my code
+//Licensed under Creative Commons CC-BY-NC-SA
 
 //Floats for x and y positions
 float posX, posY;
