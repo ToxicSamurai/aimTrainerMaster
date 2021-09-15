@@ -46,10 +46,10 @@ public void setup() {
 
 //Game 1 draw
 public void draw() {
+  background(255);
+
   //Checks if a gamemode has been selected
   menuCheck();
-
-  background(255);
 
   //If gamemode == 1, play aimTrainer
   if (gameMode == 1) {
@@ -66,6 +66,7 @@ public void draw() {
     if (begin == false) {
       background(255);
       starterShapes();
+      mousePressedCheckGame2();
     }
     //If so:
     if (begin == true) {
@@ -76,7 +77,6 @@ public void draw() {
       scoreDetect();
       scoreCounter();
       timerGame2();
-      mousePressedCheckGame2();
       //Resets color variables
       bgR = 255;
       bgGB = 255;
@@ -89,12 +89,16 @@ public void draw() {
 
 //Function to check if a gamemode has been selected yet
 void menuCheck() {
-  if (menu == true) {
+  if (menu == true && gameMode == 0) {
     background(255);
     fill(255, 0, 0);
     rect(width/6-50, height/2-50, 200, 100);
     fill(0);
     text("Aim Trainer", width/6-20, height/2+10);
+    textSize(48);
+    text("Scarlett's Aim", width/2-150, height/6);
+    text("Trainer", width/2-75, height/6+52);
+    textSize(25);
 
     if (mouseX>width/6-50 && mouseX<width/6+150 && mouseY>height/2-50 && mouseY<height/2+50) {
       println("win");
@@ -132,7 +136,7 @@ void timerGame1() {
   text("Time: " + ms1 + " frames", 50, 785);
   text("Last time: " + lastTime + " frames", 275, 785);
   text("Best time: " + bestTime + " frames", 550, 785);
-  text("Score1: " + score1, 50, 25);
+  text("Score: " + score1, 50, 35);
 }
 
 void numcheck() {
@@ -190,6 +194,10 @@ void starterShapes() {
   rect(width/6, 2 * (height/3), 200, 100);
   fill(0);
   text("Hard", width/6 + 75, 2 * (height/3) + 57.5);
+  //Title
+  textSize(32);
+  text("Aim Trainer (Tracer)", width/2-150, height/6);
+  textSize(25);
 }
 
 //Creates target and the line
@@ -249,7 +257,7 @@ void move() {
 
 //Counts the score
 void scoreCounter() {
-  text("Score: " + score2, 50, 25);
+  text("Score: " + score2, 50, 35);
 }
 
 //Counts the time to 1000 points
@@ -260,7 +268,7 @@ void timerGame2() {
   } else if (score2 > 1000) {
     //Shows the time to reach 1000 frames when 1000 is reached
     fill(255, 0, 0);
-    text("Time to reach 1000: " + ms2 + " frames", 300, 25);
+    text("Time to reach 1000: " + ms2 + " frames", 300, 35);
   }
 }
 
