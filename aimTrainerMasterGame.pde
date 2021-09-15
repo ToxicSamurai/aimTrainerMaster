@@ -174,7 +174,6 @@ void timeCheck() {
 
 /*----------------------------------------------------------------------*/
 
-
 //GAME 2 (aimTrainerTracer)
 
 //Creates buttons and text for difficulty menu
