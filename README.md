@@ -1,2 +1,4 @@
 # aimTrainerMaster
-A repo for all my aim trainers that I'm working to combine into one game.
+A repo for all my aim trainers that I've combined into one game.
+
+Finished 9/15/21
